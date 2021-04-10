@@ -6,7 +6,7 @@
 <template>
   <div class="layout">
     <div class="layout-header">
-
+      <Header />
     </div>
     <div class="layout-body">
       <router-view />
@@ -15,7 +15,8 @@
 </template>
 
 <script>
+import Header from './Header.vue';
 export default {
-  
+  components: { Header }
 };
-</script>
+</script>Header

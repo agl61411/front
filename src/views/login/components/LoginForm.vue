@@ -83,11 +83,11 @@ export default {
 </script>
 
 <style scoped>
-  .login-form>>>.el-input__suffix {
+  .login-form:deep(.el-input__suffix) {
     right: 0px
   }
 
-  .login-form >>> .el-form-item {
+  .login-form:deep(.el-form-item) {
     margin-bottom: 16px;
   }
 

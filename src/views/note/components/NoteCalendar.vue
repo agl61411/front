@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { inject } from 'vue';
 export default {
   setup () {
-    const date = ref(new Date());
+    const date = inject('date');
 
     return {
       date
@@ -18,8 +18,7 @@ export default {
 </script>
 
 <style scoped>
-  .note-calendar {
-    width: 483px;
-    min-width: 483px;
+  .note-calendar:deep(.el-calendar-table .el-calendar-day)  {
+    height: 65px;
   }
 </style>
